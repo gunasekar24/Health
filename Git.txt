@@ -1,0 +1,158 @@
+Git:
+
+popular version ctrl system.
+
+clone to local copy
+branch and merge work diff project.
+git local,git hub cloud.
+
+
+
+initialize git on folder ,making it repository.
+
+
+git init--initialize
+
+
+git --version
+
+
+create user:
+
+git config --global user.name "selenium"
+
+git config --global user.email "gunasekararumugamk@gmail.com"
+
+
+
+create folder:
+
+mkdir myproject
+
+cd  myproject
+
+initialize git:
+
+Initialized empty Git repository in C:/Users/Nigith/myproject/.git/
+
+
+create sample file:
+html
+
+
+status of the files :
+
+git status
+
+
+
+staging:
+
+add file to git:
+
+git add Sample.html
+
+
+create sample files :
+
+MD
+CSS
+HTML.
+
+
+update file created  and updated files:
+
+git add --all
+
+commit git:
+
+git commit -m "First release of Hello world"
+
+result:
+
+C:\Users\Nigith\myproject>git commit -m "First release of Hello world"
+[master (root-commit) 5399e9e] First release of Hello world
+ 3 files changed, 25 insertions(+)
+ create mode 100644 READ.md
+ create mode 100644 Sample.html
+ create mode 100644 style.css
+
+
+git log
+
+
+after modified file:
+
+C:\Users\Nigith\myproject>git commit -m "update2 changes in sample.html"
+
+
+
+create new branch:
+
+git branch Guna
+
+check
+
+git branch
+
+to save files in Branch :
+
+git checkout Guna
+
+move branch to repository:
+
+git checkout master
+
+
+merge file:
+
+git merge Guna
+
+
+Git Hub:
+
+connect git to GitHub
+
+git remote add origin https://github.com/gunsekar/Hello-world.git
+
+push the file local:
+
+git push --set-upstream origin master
+
+pull:
+
+fetch
+merge
+
+git fetch origin
+
+check log after merge
+
+C:\Users\Nigith\myproject>git log origin/master
+
+check diff b/w files:
+
+git diff origin/master
+
+C:\Users\Nigith\myproject>git diff origin/master
+diff --git a/READ.md b/READ.md
+index 374e8cc..eaf0279 100644
+--- a/READ.md
++++ b/READ.md
+@@ -1,5 +1,5 @@
+ # hello-My world
+ Hello World repository for Git tutorial
+-This is an example repository for the Git for Myself
++This is an example repository for the Git
+
+-This repository is built step by step in the tutorial
++This repository is built step by step in the tutorial
+\ No newline at end of file
+
+C:\Users\Nigith\myproject>
+
+
+merge file with permission:
+
+git merge origin/master
+
