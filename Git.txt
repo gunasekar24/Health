@@ -156,3 +156,4 @@ merge file with permission:
 
 git merge origin/master
 
+Edited file
